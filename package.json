@@ -1,0 +1,24 @@
+{
+  "name": "messenger",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel index.hbs",
+    "build": "parcel build index.hbs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rnuravtsev/messenger.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rnuravtsev/messenger/issues"
+  },
+  "homepage": "https://github.com/rnuravtsev/messenger#readme",
+  "devDependencies": {
+    "@anikin/parcel-transformer-handlebars": "^1.0.9",
+    "parcel": "^2.7.0"
+  }
+}
