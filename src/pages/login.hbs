@@ -1,0 +1,11 @@
+{{#extend "base"}}
+    {{#content "main"}}
+        <main>
+            {{#content "paper"}}
+            {{>subtitle text="Вход"}}
+            {{>form}}
+            {{>link href="./sign-up.hbs" text="Нет аккаунта?"}}
+            {{/content}}
+        </main>
+    {{/content}}
+{{/extend}}

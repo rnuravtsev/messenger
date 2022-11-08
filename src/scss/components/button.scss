@@ -1,0 +1,14 @@
+.btn {
+  font-family: 'Inter', sans-serif;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  font-size: 13px;
+  line-height: 1;
+  text-align: center;
+  min-width: 280px;
+  border: none;
+  border-radius: $default-radius;
+  &_primary {
+    background-color: $primary;
+  }
+}

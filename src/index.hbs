@@ -1,0 +1,18 @@
+---
+bodyclass: index
+scripts:
+- ./index.js
+stylesheets:
+- ./scss/main.scss
+title: Index
+---
+
+{{#extend "base"}}
+    {{#content "main"}}
+        <main>
+            <h1>Welcome from index.hbs</h1>
+            {{>button}}
+            <a href="./pages/sign-up.hbs">profile page</a>
+        </main>
+    {{/content}}
+{{/extend}}
