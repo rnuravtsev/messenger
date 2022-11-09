@@ -1,6 +1,6 @@
-<form class="form {{formClass}}" method="get">
-    {{>field validationText="Неверный логин" text="Логин"}}
-    {{>field text="Пароль" type="password"}}
-
-    {{>button class="form__button" text="Авторизоваться"}}
+<form class="form {{formClass}}" {{this}}>
+    {{#each fields}}
+        {{>field this fieldClass="form__field" }}
+    {{/each}}
+    {{> button class="form__button"}}
 </form>

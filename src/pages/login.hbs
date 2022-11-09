@@ -4,15 +4,31 @@ scripts:
 - ../index.js
 stylesheets:
 - ../scss/main.scss
-title: Index
+title: Войти
+
+fields: [
+    {
+        text: 'Логин',
+        name: 'login'
+    },
+    {
+        text: 'Пароль',
+        type: 'password',
+        name: 'password'
+    }
+]
 ---
 {{#extend "base"}}
     {{#content "main"}}
         <main>
             <div class="paper paper_auth">
                 {{>subtitle class="paper__subtitle" text="Вход"}}
-                {{>form formClass="paper__form form_auth"}}
-                {{>link class="paper__link" href="./sign-up.hbs" text="Нет аккаунта?"}}
+                {{>form
+                        fields=fields
+                        formClass="paper__form form_auth"
+                        buttonText="Авторизоваться"
+                }}
+                {{>link class="link paper__link" href="./sign-up.hbs" text="Нет аккаунта?"}}
             </div>
         </main>
     {{/content}}

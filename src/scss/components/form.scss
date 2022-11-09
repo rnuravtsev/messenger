@@ -8,6 +8,10 @@
   flex-grow: 1;
 }
 
+.form__field:nth-last-child(2) {
+  margin-bottom: 16px;
+}
+
 .form__button {
   margin-top: auto;
 }

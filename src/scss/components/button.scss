@@ -9,7 +9,7 @@
   border: none;
   border-radius: $radius-default;
   cursor: pointer;
-  transition: all .25s ease;
+  transition: $transition-default;
 
   &_primary {
     color: $white;

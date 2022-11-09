@@ -1,7 +1,11 @@
-<p class="field">
+<p class="field {{fieldClass}}">
     <label class="field__label">
         <span class="field__text">{{text}}</span>
-        <input class="field__input" type="{{#if type}}{{type}}{{else}}text{{/if}}"/>
+        <input
+                class="field__input"
+                type="{{#if type}}{{type}}{{else}}text{{/if}}"
+                name="{{name}}"
+        />
     </label>
     <span class="field__validation-text">{{validationText}}</span>
 </p>
