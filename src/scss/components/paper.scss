@@ -8,4 +8,18 @@
   &__subtitle {
     margin-bottom: 40px;
   }
+
+  &__form {
+    margin-bottom: 14px;
+  }
+
+  &__link {
+    text-align: center;
+  }
+}
+
+.paper_auth {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }

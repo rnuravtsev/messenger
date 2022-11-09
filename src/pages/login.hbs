@@ -1,4 +1,5 @@
 ---
+bodyClass: body_auth
 scripts:
 - ../index.js
 stylesheets:
@@ -8,10 +9,10 @@ title: Index
 {{#extend "base"}}
     {{#content "main"}}
         <main>
-            <div class="paper">
+            <div class="paper paper_auth">
                 {{>subtitle class="paper__subtitle" text="Вход"}}
-                {{>form}}
-                {{>link href="./sign-up.hbs" text="Нет аккаунта?"}}
+                {{>form formClass="paper__form form_auth"}}
+                {{>link class="paper__link" href="./sign-up.hbs" text="Нет аккаунта?"}}
             </div>
         </main>
     {{/content}}

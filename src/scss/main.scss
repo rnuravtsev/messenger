@@ -1,6 +1,16 @@
+// Google Fonts
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+
+// Normalize.css
 @import "../../node_modules/normalize.css/normalize.css";
+
+// Variables
 @import "./variables";
+
+// Base components styles
 @import "./app";
+
+// Components
 @import "./components/button";
 @import "./components/paper";
 @import "./components/subtitle";

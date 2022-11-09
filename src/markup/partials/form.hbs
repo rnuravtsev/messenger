@@ -1,6 +1,6 @@
-<form class="form {{class}}" method="get">
-    {{>input text="Логин"}}
-    {{>input text="Пароль" type="password"}}
+<form class="form {{formClass}}" method="get">
+    {{>base-input validationText="Неверный логин" text="Логин"}}
+    {{>base-input text="Пароль" type="password"}}
 
-    {{>button text="Авторизоваться"}}
+    {{>button class="form__button" text="Авторизоваться"}}
 </form>
