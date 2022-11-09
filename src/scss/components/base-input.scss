@@ -1,0 +1,18 @@
+.base-input {
+  margin-top: 0;
+  margin-bottom: 0;
+  width: 100%;
+}
+
+.base-input + .base-input {
+  margin-top: 16px;
+}
+
+.base-input__label {
+  display: flex;
+  flex-direction: column;
+}
+
+.base-input__input {
+  margin-top: 8px;
+}

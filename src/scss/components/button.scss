@@ -8,7 +8,9 @@
   min-width: 280px;
   border: none;
   border-radius: $default-radius;
+
   &_primary {
+    color: $white;
     background-color: $primary;
   }
 }
