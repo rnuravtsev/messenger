@@ -3,4 +3,12 @@
   line-height: 11px;
   color: $primary;
   text-decoration: none;
+
+  &:hover {
+    color: $primary-light;
+  }
+
+  &:active {
+    color: $primary-dark;
+  }
 }

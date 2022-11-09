@@ -1,10 +1,16 @@
+// Colors
 $primary: #3369f3;
+$primary-light: #5680f9;
+$primary-dark: #0d4acc;
 $gray: #999999;
 $white: #ffffff;
 $negative: #ff2f2f;
 
-$default-radius: 8px;
-
+// Border
+$radius-default: 8px;
 
 // Field
 $form-filed-min-height: 50px;
+
+// Animation
+$transition-default: all .25s ease;

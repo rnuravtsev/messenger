@@ -7,10 +7,20 @@
   text-align: center;
   min-width: 280px;
   border: none;
-  border-radius: $default-radius;
+  border-radius: $radius-default;
+  cursor: pointer;
+  transition: all .25s ease;
 
   &_primary {
     color: $white;
     background-color: $primary;
+
+    &:hover {
+      background-color: $primary-light;
+    }
+
+    &:focus {
+      background-color: $primary-dark;
+    }
   }
 }

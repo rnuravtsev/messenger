@@ -1,18 +1,22 @@
-const inputs = document.querySelectorAll('.field__input')
+document.addEventListener('DOMContentLoaded', () => {
+    const inputs = document.querySelectorAll('.field__input')
 
-const toggleLabelClass = (input, label, className = 'field__label_shrink') => {
-    if (input.value || document.activeElement === input) {
-        label.classList.add(className)
-    } else {
-        label.classList.remove(className)
+    console.log('911.', inputs)
+
+    const toggleLabelClass = (input, label, className = 'field__label_shrink') => {
+        if (input.value || document.activeElement === input) {
+            label.classList.add(className)
+        } else {
+            label.classList.remove(className)
+        }
     }
-}
 
-const shrinkInputLabel = ({ target }) => {
-    const label = target.parentElement
-    toggleLabelClass(target, label)
-}
+    const shrinkInputLabel = ({ target }) => {
+        const label = target.parentElement
+        toggleLabelClass(target, label)
+    }
 
-inputs.forEach((el) => el.addEventListener('input', shrinkInputLabel))
-inputs.forEach((el) => el.addEventListener('blur', shrinkInputLabel))
-inputs.forEach((el) => el.addEventListener('focus', shrinkInputLabel))
+    inputs.forEach((el) => el.addEventListener('input', shrinkInputLabel))
+    inputs.forEach((el) => el.addEventListener('blur', shrinkInputLabel))
+    inputs.forEach((el) => el.addEventListener('focus', shrinkInputLabel))
+})
