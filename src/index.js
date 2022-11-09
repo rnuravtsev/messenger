@@ -1,6 +1,6 @@
-const inputs = document.querySelectorAll('.base-input__input')
+const inputs = document.querySelectorAll('.field__input')
 
-const toggleLabelClass = (input, label, className = 'base-input__label_shrink') => {
+const toggleLabelClass = (input, label, className = 'field__label_shrink') => {
     if (input.value || document.activeElement === input) {
         label.classList.add(className)
     } else {
