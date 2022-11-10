@@ -1,6 +1,10 @@
-<form class="form {{formClass}}" {{this}}>
+<form class="form {{formClass}}">
     {{#each fields}}
         {{>field this fieldClass="form__field" }}
     {{/each}}
-    {{> button class="form__button"}}
+    {{#if hideSubmitButton}}
+
+    {{else}}
+        {{> button class="form__button"}}
+    {{/if}}
 </form>

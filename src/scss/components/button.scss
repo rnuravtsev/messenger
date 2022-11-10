@@ -12,15 +12,10 @@
   transition: $transition-default;
 
   &_primary {
-    color: $white;
-    background-color: $primary;
+    @include btn-color($white, $primary, $primary-light, $primary-dark);
+  }
 
-    &:hover {
-      background-color: $primary-light;
-    }
-
-    &:focus {
-      background-color: $primary-dark;
-    }
+  &_tertiary {
+    @include btn-color($primary, transparent, $primary-light, $primary-dark);
   }
 }

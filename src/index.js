@@ -1,8 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     const inputs = document.querySelectorAll('.field__input')
 
-    console.log('911.', inputs)
-
     const toggleLabelClass = (input, label, className = 'field__label_shrink') => {
         if (input.value || document.activeElement === input) {
             label.classList.add(className)

@@ -1,0 +1,51 @@
+---
+bodyClass:
+scripts:
+- ../index.js
+stylesheets:
+- ../scss/main.scss
+title: Профиль
+userName: Иван
+userGender: Мужскойr
+fields: [
+{
+title: 'Почта',
+text: 'abs@gmail.com',
+},
+{
+title: 'Логин',
+text: 'kReal',
+},
+{
+title: 'Имя',
+text: 'Кирилл',
+},
+{
+title: 'Фамилия',
+text: 'Фомин',
+},
+{
+title: 'Имя в чате',
+text: 'kReal',
+},
+{
+title: 'Телефон',
+text: '7 (917) 234 54 23',
+},
+]
+---
+{{#extend "base"}}
+    {{#content "main"}}
+        <main>
+            {{> img
+                    imgClass="profile__img"
+                    width="130"
+                    height="130"
+                    src="../static/images/userpic-male.svg"
+            }}
+            {{>subtitle class="profile__subtitle" text=userName }}
+            {{> table data=fields}}
+            {{> button class="profile__button" buttonText="Сохранить"}}
+        </main>
+    {{/content}}
+{{/extend}}

@@ -1,9 +1,10 @@
 <p class="field {{fieldClass}}">
-    <label class="field__label">
+    <label class="field__label {{labelClass}}">
         <span class="field__text">{{text}}</span>
         <input
                 class="field__input"
                 type="{{#if type}}{{type}}{{else}}text{{/if}}"
+                value="{{inputValue}}"
                 name="{{name}}"
         />
     </label>

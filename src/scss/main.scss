@@ -4,8 +4,9 @@
 // Normalize.css
 @import "../../node_modules/normalize.css/normalize.css";
 
-// Variables
+// Variables and mixins
 @import "./variables";
+@import "./mixins";
 
 // Base components styles
 @import "./app";
@@ -17,3 +18,4 @@
 @import "./components/link";
 @import "./components/form";
 @import "components/field";
+@import "components/profile";

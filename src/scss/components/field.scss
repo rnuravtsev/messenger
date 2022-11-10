@@ -1,12 +1,11 @@
 .field {
   margin-top: 0;
-  margin-bottom: 0;
   min-height: $form-filed-min-height;
   width: 100%;
-}
 
-.field + .field {
-  margin-top: 16px;
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .field__label {
@@ -34,6 +33,23 @@
   &_shrink {
     .field__text {
       transform: translate(-35px, -1px) scale(0.75);
+    }
+  }
+
+  &_row {
+    flex-direction: row;
+    justify-content: space-between;
+
+    .field__text {
+      color: $main;
+      will-change: initial;
+      transform: none;
+      transition: none;
+    }
+
+    .field__input {
+      color: $gray;
+      text-align: right;
     }
   }
 }
