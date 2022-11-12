@@ -1,11 +1,12 @@
 .btn {
-  font-family: 'Inter', sans-serif;
   padding-top: 12px;
   padding-bottom: 12px;
+  display: block;
+  min-width: 280px;
   font-size: 13px;
   line-height: 1;
   text-align: center;
-  min-width: 280px;
+  font-family: 'Inter', sans-serif;
   border: none;
   border-radius: $radius-default;
   cursor: pointer;

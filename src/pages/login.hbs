@@ -7,28 +7,30 @@ stylesheets:
 title: Войти
 
 fields: [
-    {
-        text: 'Логин',
-        name: 'login'
-    },
-    {
-        text: 'Пароль',
-        type: 'password',
-        name: 'password'
-    }
+{
+text: 'Логин',
+name: 'login'
+},
+{
+text: 'Пароль',
+type: 'password',
+name: 'password'
+}
 ]
 ---
 {{#extend "base"}}
     {{#content "main"}}
-        <main>
-            <div class="paper paper_auth">
-                {{>subtitle class="paper__subtitle" text="Вход"}}
-                {{>form
-                        fields=fields
-                        formClass="paper__form form_auth"
-                        buttonText="Авторизоваться"
-                }}
-                {{>link class="link paper__link" href="./sign-up.hbs" text="Нет аккаунта?"}}
+        <main class="login">
+            <div class="container">
+                <div class="paper paper_auth login__paper">
+                    {{>subtitle class="paper__subtitle" text="Вход"}}
+                    {{>form
+                            fields=fields
+                            formClass="paper__form"
+                            buttonText="Авторизоваться"
+                    }}
+                    {{>link class="link paper__link" href="./sign-up.hbs" text="Нет аккаунта?"}}
+                </div>
             </div>
         </main>
     {{/content}}

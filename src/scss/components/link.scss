@@ -11,4 +11,8 @@
   &:active {
     color: $primary-dark;
   }
+
+  &_negative {
+    color: $negative;
+  }
 }

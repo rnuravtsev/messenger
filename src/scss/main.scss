@@ -12,6 +12,9 @@
 @import "./app";
 
 // Components
+@import "./components/welcome";
+@import "./components/container";
+@import "./components/img";
 @import "./components/button";
 @import "./components/paper";
 @import "./components/subtitle";
@@ -19,3 +22,6 @@
 @import "./components/form";
 @import "components/field";
 @import "components/profile";
+@import "components/table";
+@import "components/chat";
+@import "components/login";

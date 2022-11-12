@@ -2,15 +2,15 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
 
   &_auth {
     flex-grow: 1;
   }
+}
 
-  &_profile {
-    color: rebeccapurple;
-    min-width: 510px;
-  }
+.form__field {
+  margin-bottom: 8px;
 }
 
 .form__button {
